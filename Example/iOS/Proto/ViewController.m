@@ -49,13 +49,13 @@
     
     NSAssert(([person.myfield uint32AtIndex:0] == [arr[0] unsignedIntegerValue]), @"NOT EQUALS");
     
-    NSLog(@"%lu",[person.myfield uint32AtIndex:0]);
+    NSLog(@"%u",(unsigned int)[person.myfield uint32AtIndex:0]);
     
     
     
     Person *person2 = [Person parseFromData:person.data];
     
-    NSLog(@"%lu",[person2.myfield uint32AtIndex:1]);
+    NSLog(@"%u",(unsigned int)[person2.myfield uint32AtIndex:1]);
     
     
     

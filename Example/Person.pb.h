@@ -52,7 +52,7 @@
 + (Person*) parseFromCodedInputStream:(PBCodedInputStream*) input extensionRegistry:(PBExtensionRegistry*) extensionRegistry;
 @end
 
-@interface PersonBuilder : PBGeneratedMessage_Builder {
+@interface PersonBuilder : PBGeneratedMessageBuilder {
 @private
   Person* result;
 }
@@ -102,7 +102,7 @@
 + (ExampleObject*) parseFromCodedInputStream:(PBCodedInputStream*) input extensionRegistry:(PBExtensionRegistry*) extensionRegistry;
 @end
 
-@interface ExampleObjectBuilder : PBGeneratedMessage_Builder {
+@interface ExampleObjectBuilder : PBGeneratedMessageBuilder {
 @private
   ExampleObject* result;
 }
